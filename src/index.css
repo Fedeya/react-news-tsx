@@ -17,6 +17,10 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+img {
+	max-width: 100%;
+}
+
 h1 {
 	font-weight: normal;
 	color: var(--violet);
@@ -41,8 +45,50 @@ h1 {
 	padding: 10px;
 	outline: none;
 	background-color: #566270;
+	color: #fffff3;
 }
 
 .search-field::placeholder {
 	color: #ccc;
+}
+
+.card {
+	background-color: #566270;
+	margin: 1rem;
+	border-radius: 10px;
+	color: #fffff3;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-body {
+	padding: 20px;
+}
+
+.button-read {
+	background-color: var(--violet);
+	border: none;
+	padding: 1rem;
+	border-radius: 20px;
+	width: 100%;
+	margin: 1rem auto;
+	font-size: 1.2rem;
+	color: #fffff3;
+	outline: none;
+	cursor: pointer;
+	justify-self: flex-end;
+}
+
+.news-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+	.card {
+		width: 400px;
+		margin: 10px auto;
+	}
 }
