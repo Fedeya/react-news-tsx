@@ -41,9 +41,10 @@ h1 {
 	width: 100%;
 	margin: 1rem;
 	border-radius: 10px;
-	border: 1px solid var(--violet);
+	border: 2px solid var(--violet);
 	padding: 10px;
 	outline: none;
+	font-size: 1rem;
 	background-color: #566270;
 	color: #fffff3;
 }
