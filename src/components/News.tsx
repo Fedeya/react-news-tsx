@@ -12,9 +12,9 @@ const News: React.FC<NewsProps> = ({ article }) => {
       <img src={article.urlToImage} alt={article.title} className="card-img" />
       <div className="card-body">
         <h2 className="new-title">{article.title}</h2>
-        <button className="button-read">
+        <a className="button-read" href={article.url} target="_blank" rel="noopener noreferrer" >
           Read
-        </button>
+        </a>
       </div>
     </div>
   );
